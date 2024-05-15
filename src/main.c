@@ -8,15 +8,13 @@
 #include "driver/gpio.h"
 #include "driver/touch_pad.h"
 
-#define BUTTON_0                22
-#define BUTTON_1                23
+#define BUTTON_0 22
+#define BUTTON_1 23
 #define GPIO_INPUT_PIN_SEL  ((1ULL<<BUTTON_0) | (1ULL<<BUTTON_1))
+#define ESP_INTR_FLAG_DEFAULT 0
+#define DEBOUNCE_TIME 50
 
-#define ESP_INTR_FLAG_DEFAULT   0
-
-#define DEBOUNCE_TIME           50
 static uint32_t last_interrupt_time = 0; 
-
 static QueueHandle_t gpio_evt_queue = NULL;
 
 static void IRAM_ATTR gpio_isr_handler(void* arg)
