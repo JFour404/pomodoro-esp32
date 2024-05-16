@@ -18,7 +18,7 @@ Settings:
 - [ ] Volume
 
 IO:
-- [ ] Buttons
+- [x] Buttons
 - [ ] Sound effects
 - [ ] Light effects
 - [ ] Display I2C
