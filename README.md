@@ -19,6 +19,7 @@ Settings:
 
 IO:
 - [x] Buttons
+- [x] Rotary encoder
 - [ ] Sound effects
 - [ ] Light effects
 - [ ] Display I2C
