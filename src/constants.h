@@ -5,7 +5,7 @@
 #define LED_BUILDIN 2
 
 // INPUTS
-#define BUTTON_0    22
+#define BUTTON_0    5
 #define BUTTON_1    23
 #define ROTARY_ENCODER_S1  27
 #define ROTARY_ENCODER_S2  26
